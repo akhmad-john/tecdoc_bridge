@@ -40,22 +40,22 @@ def hello_world():
 #         }
 
 
-@api.route('/main')
-class SuppliersAPI(Resource):
-    def get(self):
-        suppliers = filter_queryset_first(session, Suppliers, 10)
-        suppliers_list = []
-        for supplier in suppliers:
-
-            suppliers_list.append({
-                'dataversion': supplier.dataversion,
-                'description': supplier.description,
-
-            })
-        return {
-            "message": "Hello",
-            "articles": suppliers_list
-        }
+# @api.route('/main')
+# class SuppliersAPI(Resource):
+#     def get(self):
+#         suppliers = filter_queryset_first(session, Suppliers, 10)
+#         suppliers_list = []
+#         for supplier in suppliers:
+#
+#             suppliers_list.append({
+#                 'dataversion': supplier.dataversion,
+#                 'description': supplier.description,
+#
+#             })
+#         return {
+#             "message": "Hello",
+#             "articles": suppliers_list
+#         }
 
 if __name__ == '__main__':
     app.run()
