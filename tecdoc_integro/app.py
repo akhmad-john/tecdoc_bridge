@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restx import Resource, Api
 # from models import Suppliers
 # from config import load_session
-from utils import fetch_queryset, filter_queryset_with_id, filter_queryset_first, filter_queryset_with_article_number
+# from utils import fetch_queryset, filter_queryset_with_id, filter_queryset_first, filter_queryset_with_article_number
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
