@@ -56,3 +56,6 @@ class SuppliersAPI(Resource):
             "message": "Hello",
             "articles": suppliers_list
         }
+
+if __name__ == '__main__':
+    app.run()
