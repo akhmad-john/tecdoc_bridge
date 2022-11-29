@@ -10,8 +10,8 @@ pymysql.install_as_MySQLdb()
 basedir = path.abspath(path.dirname(__file__))
 load_dotenv(path.join(basedir, '.env'))
 #
-engine = create_engine(environ.get('DATABASE_URL'), echo=True)
-Base = declarative_base(engine)
+# engine = create_engine(environ.get('DATABASE_URL'), echo=True)
+# Base = declarative_base(engine)
 #
 
 
@@ -20,9 +20,9 @@ DEBUG = True
 FLASK_ENV = 'development'
 SECRET_KEY = environ.get('SECRET_KEY')
 
-def load_session():
-    metadata = Base.metadata
-    Session = sessionmaker(bind=engine)
-    session = Session()
-    return session
+# def load_session():
+#     metadata = Base.metadata
+#     Session = sessionmaker(bind=engine)
+#     session = Session()
+#     return session
 

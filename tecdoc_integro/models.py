@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from config import Base
+# from config import Base
 
 
 # class Articles(Base):
@@ -8,9 +8,9 @@ from config import Base
 #     __table_args__ = {'autoload': True}
 
 
-class Suppliers(Base):
-    __tablename__ = 'suppliers'
-    __table_args__ = {'autoload': True}
+# class Suppliers(Base):
+#     __tablename__ = 'suppliers'
+#     __table_args__ = {'autoload': True}
 
 
 # class ArticleInformation(Base):
